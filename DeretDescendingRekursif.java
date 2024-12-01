@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class DeretDescendingRekursif{
-    public static void deretDescendingRekursif(int n) {
+    public static void deretRekursif(int n) {
         if (n < 0) {
             return;
         }
         System.out.print(n + " ");
-        deretDescendingRekursif(n - 1);
+        deretRekursif(n - 1);
     }
     
-    public static void deretDescendingIteratif(int n) {
+    public static void deretIteratif(int n) {
         for (int i = n; i >= 0; i--) {
             System.out.print(i + " ");
         }
@@ -21,7 +21,7 @@ public class DeretDescendingRekursif{
         n = sc.nextInt();
     
         System.out.print("Deret: ");
-        deretDescendingIteratif(n);
+        deretIteratif(n);
         System.out.println();  
     }
 }
